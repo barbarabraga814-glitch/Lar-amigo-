@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e7d5b;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero {
+    min-height: 500px;
+    padding: 100px 25px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #e7f5ee,
+        #fff4e8
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #245c46;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #e9783d;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+    background-color: #d9652d;
+}
+
+section {
+    padding: 70px 25px;
+    text-align: center;
+}
+
+section h2 {
+    color: #2e7d5b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    font-size: 1.05rem;
+}
+
+#adote {
+    background-color: white;
+}
+
+#ajudar {
+    background-color: #edf7f2;
+}
+
+#ajudar h3 {
+    margin-top: 30px;
+    color: #e9783d;
+}
+
+.contato {
+    background-color: white;
+}
+
+footer {
+    background-color: #1f4f3b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 7px 8px;
+    }
+
+    .hero {
+        min-height: 430px;
+        padding: 70px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 55px 20px;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+}
